@@ -1,4 +1,4 @@
-# NEMO — Neuro-Symbolic Architecture for Strategic Decision Support
+NEMO — Neuro-Symbolic Architecture for Strategic Decision Support
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://python.org)
 [![Neo4j](https://img.shields.io/badge/Neo4j-GraphDB-brightgreen?logo=neo4j)](https://neo4j.com)
@@ -9,7 +9,7 @@
 
 ---
 
-## Objectif
+Objectif
 
 Concevoir un système d’**aide à la décision stratégique** capable de :
 
@@ -22,7 +22,7 @@ Ce projet explore la synergie entre **perception neuronale** et **raisonnement s
 
 ---
 
-## Architecture
+Architecture
 
 ```mermaid
 graph LR
@@ -33,7 +33,7 @@ D --> E[Clustering Sémantique]
 E --> F[Évaluation Hybride<br>(F1 hybride, CV, densité explicative)]
 F --> G[Dashboard Interactif]
 
-## Composants clés
+Composants clés
 
 Ontologie : classes (FinancialInstitution, NonStateActor, MilitaryBase), relations (FUNDS, LOCATED_AT), axiomes.
 Graphe de connaissances : stocké dans Neo4j avec labels et types de relation natifs.
@@ -42,7 +42,7 @@ Embeddings : générés via Node2Vec, enrichis avec le type sémantique des nœu
 Interface : dashboard Streamlit + Neo4j Browser pour la validation.
 
 
-# Structure du Projet
+Structure du Projet
 
 nemo/
 ├── data/raw/               # Données sources (CSV synthétiques)
@@ -57,7 +57,7 @@ nemo/
 ├── requirements.txt        # Dépendances Python
 └── README.md
 
-# Installation & Exécution
+Installation & Exécution
 
 Prérequis
 - Python 3.10+
@@ -79,15 +79,14 @@ username=neo4j
 password=passer1234
 
 4. Lancer le pipeline
-# Ingestion
+Ingestion
 python src/ingestion/ingest_economic.py
 python src/ingestion/ingest_oryx.py
 
-# Apprentissage
+Apprentissage
 python src/training/generate_embeddings.py
 python src/training/semantic_clustering.py
 
-# Évaluation
+Évaluation
 python src/evaluation/cross_validation.py
 
-# Dashboard
