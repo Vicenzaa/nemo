@@ -12,4 +12,4 @@ Détecter des **points de non-retour** dans un conflit simulé en combinant :
 ## Installation
 ```bash
 pip install -r requirements.txt
-# Créez src/config/credentials.txt avec vos identifiants Neo4j
+# Créez src/config/credentials.txt avec vos identifiants Neo4j# nemo
